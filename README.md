@@ -1,4 +1,4 @@
-# Aplicacion-Sistemas-Web
+# Aplicacion-de-Sistemas-Web
 
 Listado de los integrantes del grupo
 
