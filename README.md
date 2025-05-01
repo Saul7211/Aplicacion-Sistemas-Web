@@ -2,6 +2,6 @@
 
 Listado de los integrantes del grupo
 
-- Abiagil Alomoto
+- Abigail Alomoto
 - Saul Insusti
 - Christian Vasconez
