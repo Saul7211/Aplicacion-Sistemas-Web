@@ -38,7 +38,7 @@ body {
   background-color: var(--primary-color);/* Fondo del header */
   color: white;/* Texto blanco */
   padding: 20px;
-  display: flex;                       /* Flex para alinear contenido */
+  display: flex; /* Flex para alinear contenido */
   justify-content: space-between;  /* Separar logo y navegación */
   align-items: center;/* Centrado vertical */
 }
