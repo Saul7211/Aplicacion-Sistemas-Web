@@ -9,7 +9,7 @@
 * {
   box-sizing: border-box; /* Importante para layout coherente */
   margin: 0;
-  padding: 0;
+  padding: 0
 }
 
 body {
@@ -125,7 +125,7 @@ body {
 .product-card img {
   width: 100%;
   height: 200px;
-  object-fit: cover;
+  object-fit: cover; /*Asegura que no queden espacios vacíos en el contenedor*/
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: filter 0.3s ease;
