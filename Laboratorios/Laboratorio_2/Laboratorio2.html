@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Helpers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="p-4">
+
+    <h2>Helpers de Bootstrap</h2>
+
+    <!-- Nav Tabs -->
+    <ul class="nav nav-tabs" id="helperTabs" role="tablist">
+        <li class="nav-item" role="presentation"><button class="nav-link active" data-bs-toggle="tab"
+                data-bs-target="#espaciado" type="button">Espaciado</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#texto"
+                type="button">Texto</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#color"
+                type="button">Color</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab"
+                data-bs-target="#visualizacion" type="button">Visualización</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#flexbox"
+                type="button">Flexbox</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tamano"
+                type="button">Tamaño</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#borde"
+                type="button">Borde</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab"
+                data-bs-target="#posicion" type="button">Posición</button></li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content mt-3" id="helperTabContent">
+        <div class="tab-pane fade show active" id="espaciado" role="tabpanel">
+            <p><strong>Formato:</strong> <code>{property}{sides}-{size}</code></p>
+            <p><code>m-</code>: margen, <code>p-</code>: padding</p>
+            <p><code>t</code>: top, <code>b</code>: bottom, <code>l</code>: left, <code>r</code>: right, <code>x</code>:
+                izquierda y derecha, <code>y</code>: arriba y abajo</p>
+            <p><code>0-5, auto</code> (ej: <code>mt-3</code>, <code>px-4</code>, <code>mx-auto</code>)</p>
+            <div class="mt-3">Margen superior de 1rem</div>
+            <div class="px-4">Relleno izquierda/derecha de 1.5rem</div>
+            <div class="mx-auto" style="width: 50%;">Centrado horizontal</div>
+        </div>
+
+        <div class="tab-pane fade" id="texto" role="tabpanel">
+            <p><strong>Alineación:</strong></p>
+            <p class="text-start">Texto a la izquierda</p>
+            <p class="text-center">Texto centrado</p>
+            <p class="text-end">Texto a la derecha</p>
+
+            <p><strong>Transformación:</strong></p>
+            <p class="text-lowercase">MINÚSCULAS</p>
+            <p class="text-uppercase">mayúsculas</p>
+            <p class="text-capitalize">texto capitalizado</p>
+
+            <p><strong>Tamaño:</strong></p>
+            <p class="fw-bold">Negrita</p>
+            <p class="fst-italic">Cursiva</p>
+            <p class="fs-1">Tamaño 1</p>
+            <p class="fs-6">Tamaño 6</p>
+        </div>
+
+
+        <div class="tab-pane fade" id="color" role="tabpanel">
+
+            <p>Color</p>
+
+            <p class="text-primary">Texto azul (primary)</p>
+            <p class="text-success">Texto verde (success)</p>
+            <p class="text-danger">Texto rojo (danger)</p>
+            <p class="text-warning">Texto amarillo (warning)</p>
+            <p class="text-info">Texto azul claro (info)</p>
+            <p class="text-muted">Texto atenuado</p>
+
+            <p>Fondo</p>
+
+            <div class="bg-primary">Fondo azul</div>
+            <div class="bg-success">Fondo verde</div>
+            <div class="bg-warning">Fondo amarillo</div>
+
+        </div>
+
+        <div class="tab-pane fade" id="visualizacion" role="tabpanel">
+            <p><strong>Ejemplos de helpers de visualización:</strong></p>
+
+            <div class="mb-3 p-2 border bg-light">
+                <code>.d-none</code>
+                <div class="d-none">Este texto no debería ser visible</div>
+                <p class="text-muted">Este elemento está oculto con <code>d-none</code>.</p>
+            </div>
+
+            <div class="mb-3 p-2 border bg-light">
+                <code>.d-block</code>
+                <div class="d-block bg-primary text-white p-2">Visible como bloque</div>
+            </div>
+
+            <div class="mb-3 p-2 border bg-light">
+                <code>.d-inline</code>
+                <div class="d-inline bg-success text-white p-2">Visible en línea</div>
+                <span> <- sigue el texto</span>
+            </div>
+
+            <div class="mb-3 p-2 border bg-light">
+                <code>.d-flex</code>
+                <div class="d-flex bg-info text-white p-2">
+                    <div class="me-2">Item 1</div>
+                    <div>Item 2</div>
+                </div>
+            </div>
+
+            <div class="mb-3 p-2 border bg-light">
+                <code>.d-md-none .d-lg-block</code>
+                <div class="d-md-none d-lg-block bg-warning text-dark p-2">
+                    Visible en pantallas grandes (lg), oculto en medianas (md)
+                </div>
+                <p class="text-muted">Redimensiona la ventana para probar el efecto responsive.</p>
+            </div>
+        </div>
+
+
+        <div class="tab-pane fade" id="flexbox" role="tabpanel">
+            <p><strong>Ejemplos de helpers de Flexbox:</strong></p>
+
+            <div class="mb-3 p-2 border bg-light">
+                <code>.d-flex .justify-content-start</code>
+                <div class="d-flex justify-content-start bg-primary text-white p-2">
+                    <div class="me-2">Item 1</div>
+                    <div>Item 2</div>
+                </div>
+                <p class="text-muted">Elementos alineados al inicio del contenedor.</p>
+            </div>
+
+            <div class="mb-3 p-2 border bg-light">
+                <code>.d-flex .justify-content-center</code>
+                <div class="d-flex justify-content-center bg-success text-white p-2">
+                    <div class="me-2">Item 1</div>
+                    <div>Item 2</div>
+                </div>
+                <p class="text-muted">Elementos centrados horizontalmente.</p>
+            </div>
+
+            <div class="mb-3 p-2 border bg-light">
+                <code>.d-flex .justify-content-between</code>
+                <div class="d-flex justify-content-between bg-info text-white p-2">
+                    <div>Item 1</div>
+                    <div>Item 2</div>
+                </div>
+                <p class="text-muted">Espacio entre elementos.</p>
+            </div>
+
+            <div class="mb-3 p-2 border bg-light" style="height: 100px;">
+                <code>.d-flex .align-items-start</code>
+                <div class="d-flex align-items-start bg-warning text-dark p-2 h-100">
+                    <div class="bg-secondary text-white p-1">Arriba</div>
+                </div>
+                <p class="text-muted">Elemento alineado arriba verticalmente.</p>
+            </div>
+
+            <div class="mb-3 p-2 border bg-light" style="height: 100px;">
+                <code>.d-flex .align-items-center</code>
+                <div class="d-flex align-items-center bg-danger text-white p-2 h-100">
+                    <div class="bg-secondary text-white p-1">Centrado</div>
+                </div>
+                <p class="text-muted">Elemento centrado verticalmente.</p>
+            </div>
+
+            <div class="mb-3 p-2 border bg-light">
+                <code>.d-flex .flex-column</code>
+                <div class="d-flex flex-column bg-secondary text-white p-2">
+                    <div class="mb-1">Columna 1</div>
+                    <div>Columna 2</div>
+                </div>
+                <p class="text-muted">Los elementos se apilan en columna.</p>
+            </div>
+        </div>
+
+
+        <div class="tab-pane fade" id="tamano" role="tabpanel">
+            <p><strong>Ejemplos de helpers de Tamaño:</strong></p>
+
+            <div class="mb-3 p-2 border bg-light">
+                <code>.w-25</code>
+                <div class="w-25 bg-primary text-white p-2">Ancho 25%</div>
+            </div>
+
+            <div class="mb-3 p-2 border bg-light">
+                <code>.w-50</code>
+                <div class="w-50 bg-success text-white p-2">Ancho 50%</div>
+            </div>
+
+            <div class="mb-3 p-2 border bg-light">
+                <code>.w-75</code>
+                <div class="w-75 bg-info text-white p-2">Ancho 75%</div>
+            </div>
+
+            <div class="mb-3 p-2 border bg-light">
+                <code>.w-100</code>
+                <div class="w-100 bg-danger text-white p-2">Ancho 100%</div>
+            </div>
+
+            <div class="mb-3 p-2 border bg-light" style="height: 200px;">
+                <code>.h-25</code>
+                <div class="h-25 bg-warning text-dark p-2" style="height: 25%;">Alto 25% (dentro de 200px)</div>
+            </div>
+
+            <div class="mb-3 p-2 border bg-light" style="height: 200px;">
+                <code>.h-100</code>
+                <div class="h-100 bg-secondary text-white p-2">Alto 100% (dentro de 200px)</div>
+            </div>
+        </div>
+
+
+        <div class="tab-pane fade" id="borde" role="tabpanel">
+            <div class="border">Borde completo</div>
+            <div class="border-top">Borde superior</div>
+            <div class="border border-primary">Borde con color</div>
+            <div class="border rounded">Borde redondeado</div>
+            <div class="border rounded-circle">Borde circular</div>
+            <div class="border-0">Sin borde</div>
+        </div>
+
+        <div class="tab-pane fade" id="posicion" role="tabpanel">
+            <p><strong>Ejemplos de helpers de posición:</strong></p>
+
+            <div class="mb-3 p-2 border">
+                <div class="position-static">.position-static (posición estática)</div>
+            </div>
+
+            <div class="mb-3 p-2 border position-relative" style="height: 80px; background-color: #f8f9fa;">
+                <div class="position-relative">.position-relative (contenedor relativo)</div>
+            </div>
+
+            <div class="mb-3 p-2 border position-relative" style="height: 120px; background-color: #f8f9fa;">
+                <div class="position-absolute top-0 start-0 bg-warning p-1">.position-absolute</div>
+            </div>
+
+            <div class="mb-3 p-2 border" style="height: 100px;">
+                <div class="position-fixed bottom-0 end-0 bg-info text-white p-2">
+                    .position-fixed (pegado al borde de la ventana)
+                </div>
+            </div>
+
+            <div class="mb-3 p-2 border" style="height: 150px; overflow: auto;">
+                <div class="position-sticky top-0 bg-success text-white p-2">
+                    .position-sticky (se queda fijo al hacer scroll)
+                </div>
+                <div style="height: 200px;"></div>
+            </div>
+
+            <div class="mb-3 p-2 border position-relative" style="height: 150px; background-color: #f8f9fa;">
+                <div class="position-absolute top-0 start-0 bg-secondary text-white p-1">
+                    .top-0 .start-0 (pegado arriba a la izquierda)
+                </div>
+            </div>
+
+            <div class="mb-3 p-2 border position-relative" style="height: 150px; background-color: #f8f9fa;">
+                <div class="position-absolute top-50 start-50 translate-middle bg-dark text-white p-2">
+                    .translate-middle (centrado absoluto)
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
