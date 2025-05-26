@@ -33,7 +33,4 @@ La página incluye:
 - Proponer soluciones basadas en innovación y tecnología.
 - Generar participación ciudadana activa.
 
-## 📝 Licencia
-
-Este proyecto fue desarrollado con fines educativos y no tiene fines comerciales.
 
