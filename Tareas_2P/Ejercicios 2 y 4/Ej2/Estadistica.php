@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1); // Activa el tipado fuerte
 
-// Interfaz que obliga a definir los métodos estadísticos
+// Interfaz que define los métodos estadísticos
 interface OperacionesEstadisticas {
     public function calcularMedia(array $datos): float;
     public function calcularMediana(array $datos): float;
